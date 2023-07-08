@@ -1,6 +1,5 @@
 <template>
 	<div class="home card">
-		<SelectIcon />
 		<img class="home-bg" src="@/assets/images/welcome.png" alt="welcome" />
 	</div>
 </template>

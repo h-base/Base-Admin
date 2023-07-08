@@ -1,10 +1,15 @@
 <template>
 	<div class="login-container flex-center">
-		<div class="login-box">
+		<div class="login-box bruce">
+			<ul class="bubble-bgwall">
+				<li>html</li>
+				<li>css</li>
+				<li>typescript</li>
+				<li>vue3</li>
+				<li>vite</li>
+				<li>pinia</li>
+			</ul>
 			<SwitchDark class="dark" />
-			<div class="login-left">
-				<img class="login-left-img" src="@/assets/images/login_left.png" alt="login" />
-			</div>
 			<div class="login-form">
 				<div class="login-logo">
 					<img class="login-icon" src="@/assets/images/logo.png" alt="" />
@@ -22,4 +27,5 @@ import LoginForm from "./components/LoginForm.vue";
 
 <style scoped lang="scss">
 @import "./index.scss";
+@import "./bubble.scss";
 </style>
