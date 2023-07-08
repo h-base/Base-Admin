@@ -7,7 +7,7 @@
 		</template>
 		<el-checkbox-group v-bind="attrs" v-model="selectValue">
 			<template v-for="item in selectOptions" :key="(item.value as string)">
-				<el-checkbox :label="isValueObject ? item : item.value">
+				<el-checkbox v-bind="item" :label="isValueObject ? item : item.value">
 					{{ item.label }}
 				</el-checkbox>
 			</template>
@@ -66,7 +66,9 @@ const selectOptions = ref<ACheckboxProps["options"]>([]);
  */
 const handleCheckAllChange = (val: CheckboxValueType) => {
 	selectValue.value = (
-		val ? selectOptions.value?.map(item => (props.isValueObject ? item : item.value)) ?? [] : []
+		val
+			? selectOptions.value?.filter(it => !it.disabled)?.map(item => (props.isValueObject ? item : item.value)) ?? []
+			: []
 	) as CheckboxGroupProps["modelValue"];
 };
 
@@ -80,7 +82,7 @@ const selectValue = computed({
 });
 
 const checkAll = computed({
-	get: () => selectValue.value.length === selectOptions.value?.length,
+	get: () => selectValue.value.length === selectOptions.value?.filter(it => !it.disabled)?.length,
 	set: val => val
 });
 

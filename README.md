@@ -82,8 +82,6 @@ yarn run lint:eslint
 # prettier 格式化代码
 yarn run lint:prettier
 
-# stylelint 格式化样式
-yarn run lint:stylelint
 ```
 
 - **commit：**

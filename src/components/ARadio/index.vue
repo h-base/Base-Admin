@@ -2,7 +2,7 @@
 	<div class="a-radio">
 		<el-radio-group v-bind="attrs" v-model="selectValue">
 			<template v-for="item in selectOptions" :key="(item.value as string)">
-				<el-radio :label="item.value">
+				<el-radio v-bind="item">
 					{{ item.label }}
 				</el-radio>
 			</template>

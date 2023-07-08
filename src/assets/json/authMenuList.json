@@ -30,6 +30,64 @@
 			}
 		},
 		{
+			"path": "/form",
+			"name": "form",
+			"redirect": "/form/base",
+			"meta": {
+				"type": 1,
+				"icon": "List",
+				"title": "表单",
+				"isHide": false,
+				"isFull": false,
+				"isAffix": false,
+				"isKeepAlive": true
+			},
+			"children": [
+				{
+					"path": "/form/base",
+					"name": "form-base",
+					"component": "/form/base/index",
+					"meta": {
+						"type": 2,
+						"icon": "",
+						"title": "基础表单",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					}
+				},
+				{
+					"path": "/form/dynamic",
+					"name": "form-dynamic",
+					"component": "/form/dynamic/index",
+					"meta": {
+						"type": 2,
+						"icon": "",
+						"title": "动态表单",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					}
+				},
+				{
+					"path": "/form/linkage",
+					"name": "form-linkage",
+					"component": "/form/linkage/index",
+					"meta": {
+						"type": 2,
+						"icon": "",
+						"title": "表单联动",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					}
+				}
+			]
+		},
+		{
 			"path": "/system",
 			"name": "system",
 			"redirect": "/system/account",
