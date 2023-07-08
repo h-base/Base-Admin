@@ -1,0 +1,670 @@
+{
+	"code": 200,
+	"data": [
+		{
+			"path": "/home/index",
+			"name": "home",
+			"component": "/home/index",
+			"meta": {
+				"type": 1,
+				"icon": "HomeFilled",
+				"title": "首页",
+				"isHide": false,
+				"isFull": false,
+				"isAffix": true,
+				"isKeepAlive": false
+			}
+		},
+		{
+			"path": "/dataScreen",
+			"name": "dataScreen",
+			"component": "/dataScreen/index",
+			"meta": {
+				"type": 1,
+				"icon": "Histogram",
+				"title": "数据大屏",
+				"isHide": false,
+				"isFull": true,
+				"isAffix": false,
+				"isKeepAlive": false
+			}
+		},
+		{
+			"path": "/system",
+			"name": "system",
+			"redirect": "/system/account",
+			"meta": {
+				"type": 1,
+				"icon": "Tools",
+				"title": "系统管理",
+				"isHide": false,
+				"isFull": false,
+				"isAffix": false,
+				"isKeepAlive": true
+			},
+			"children": [
+				{
+					"path": "/system/account",
+					"name": "system-account",
+					"redirect": "/system/account/list",
+					"meta": {
+						"type": 1,
+						"icon": "UserFilled",
+						"title": "账号管理",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					},
+					"children": [
+						{
+							"path": "/system/account/list",
+							"name": "system-account-list",
+							"component": "/system/account/list/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "账号管理-列表",
+								"activeMenu": "/system/account",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/account/:id",
+							"name": "system-account-detail",
+							"component": "/system/account/detail/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "账号管理-详情",
+								"activeMenu": "/system/account",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/account/create",
+							"name": "system-account-create",
+							"component": "/system/account/create/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "账号管理-创建",
+								"activeMenu": "/system/account",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": false
+							}
+						},
+						{
+							"path": "/system/account/update",
+							"name": "system-account-update",
+							"component": "/system/account/update/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "账号管理-编辑",
+								"activeMenu": "/system/account",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/account/list/button-import",
+							"name": "system-account-list-button-import",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "账号管理-列表-批量添加",
+								"activeMenu": "/system/account",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/account/list/button-look",
+							"name": "system-account-list-button-look",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "账号管理-列表-查看",
+								"activeMenu": "/system/account",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/account/list/button-create",
+							"name": "system-account-list-button-create",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "账号管理-列表-新增",
+								"activeMenu": "/system/account",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": false
+							}
+						},
+						{
+							"path": "/system/account/list/button-update",
+							"name": "system-account-list-button-update",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "账号管理-列表-编辑",
+								"activeMenu": "/system/account",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/account/list/button-delete",
+							"name": "system-account-list-button-delete",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "账号管理-列表-删除",
+								"activeMenu": "/system/account",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						}
+					]
+				},
+				{
+					"path": "/system/menu",
+					"name": "system-menu",
+					"redirect": "/system/menu/list",
+					"meta": {
+						"type": 1,
+						"icon": "Menu",
+						"title": "菜单管理",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					},
+					"children": [
+						{
+							"path": "/system/menu/list",
+							"name": "system-menu-list",
+							"component": "/system/menu/list/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "菜单管理-列表",
+								"activeMenu": "/system/menu",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/menu/:id",
+							"name": "system-menu-detail",
+							"component": "/system/menu/detail/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "菜单管理-详情",
+								"activeMenu": "/system/menu",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/menu/create",
+							"name": "system-menu-create",
+							"component": "/system/menu/create/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "菜单管理-创建",
+								"activeMenu": "/system/menu",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": false
+							}
+						},
+						{
+							"path": "/system/menu/update",
+							"name": "system-menu-update",
+							"component": "/system/menu/update/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "菜单管理-编辑",
+								"activeMenu": "/system/menu",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/menu/list/button-look",
+							"name": "system-menu-list-button-look",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "菜单管理-列表-查看",
+								"activeMenu": "/system/menu",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/menu/list/button-create",
+							"name": "system-menu-list-button-create",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "菜单管理-列表-新增",
+								"activeMenu": "/system/menu",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": false
+							}
+						},
+						{
+							"path": "/system/menu/list/button-update",
+							"name": "system-menu-list-button-update",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "菜单管理-列表-编辑",
+								"activeMenu": "/system/menu",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/menu/list/button-delete",
+							"name": "system-menu-list-button-delete",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "菜单管理-列表-删除",
+								"activeMenu": "/system/menu",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						}
+					]
+				},
+				{
+					"path": "/system/role",
+					"name": "system-role",
+					"redirect": "/system/role/list",
+					"meta": {
+						"type": 1,
+						"icon": "Stamp",
+						"title": "角色管理",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					},
+					"children": [
+						{
+							"path": "/system/role/list",
+							"name": "system-role-list",
+							"component": "/system/role/list/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "角色管理-列表",
+								"activeMenu": "/system/role",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/role/:id",
+							"name": "system-role-detail",
+							"component": "/system/role/detail/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "角色管理-详情",
+								"activeMenu": "/system/role",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/role/create",
+							"name": "system-role-create",
+							"component": "/system/role/create/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "角色管理-创建",
+								"activeMenu": "/system/role",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": false
+							}
+						},
+						{
+							"path": "/system/role/update",
+							"name": "system-role-update",
+							"component": "/system/role/update/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "角色管理-编辑",
+								"activeMenu": "/system/role",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/role/list/button-look",
+							"name": "system-role-list-button-look",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "角色管理-列表-查看",
+								"activeMenu": "/system/role",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/role/list/button-create",
+							"name": "system-role-list-button-create",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "角色管理-列表-新增",
+								"activeMenu": "/system/role",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": false
+							}
+						},
+						{
+							"path": "/system/role/list/button-update",
+							"name": "system-role-list-button-update",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "角色管理-列表-编辑",
+								"activeMenu": "/system/role",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/role/list/button-delete",
+							"name": "system-role-list-button-delete",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "角色管理-列表-删除",
+								"activeMenu": "/system/role",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						}
+					]
+				},
+				{
+					"path": "/system/dict",
+					"name": "system-dict",
+					"redirect": "/system/dict/list",
+					"meta": {
+						"type": 1,
+						"icon": "Platform",
+						"title": "字典管理",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					},
+					"children": [
+						{
+							"path": "/system/dict/list",
+							"name": "system-dict-list",
+							"component": "/system/dict/list/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "字典管理-列表",
+								"activeMenu": "/system/dict",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/dict/:id",
+							"name": "system-dict-detail",
+							"component": "/system/dict/detail/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "字典管理-详情",
+								"activeMenu": "/system/dict",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/dict/create",
+							"name": "system-dict-create",
+							"component": "/system/dict/create/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "字典管理-创建",
+								"activeMenu": "/system/dict",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": false
+							}
+						},
+						{
+							"path": "/system/dict/update",
+							"name": "system-dict-update",
+							"component": "/system/dict/update/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "字典管理-编辑",
+								"activeMenu": "/system/dict",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/dict/list/button-look",
+							"name": "system-dict-list-button-look",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "字典管理-列表-查看",
+								"activeMenu": "/system/dict",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/dict/list/button-create",
+							"name": "system-dict-list-button-create",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "字典管理-列表-新增",
+								"activeMenu": "/system/dict",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": false
+							}
+						},
+						{
+							"path": "/system/dict/list/button-update",
+							"name": "system-dict-list-button-update",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "字典管理-列表-编辑",
+								"activeMenu": "/system/dict",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/dict/list/button-delete",
+							"name": "system-dict-list-button-delete",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "字典管理-列表-删除",
+								"activeMenu": "/system/dict",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						}
+					]
+				},
+				{
+					"path": "/system/log",
+					"name": "system-log",
+					"redirect": "/system/log/list",
+					"meta": {
+						"type": 1,
+						"icon": "Management",
+						"title": "日志管理",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					},
+					"children": [
+						{
+							"path": "/system/log/list",
+							"name": "system-log-list",
+							"component": "/system/log/list/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "日志管理-列表",
+								"activeMenu": "/system/log",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/log/:id",
+							"name": "system-log-detail",
+							"component": "/system/log/detail/index",
+							"meta": {
+								"type": 2,
+								"icon": "",
+								"title": "日志管理-详情",
+								"activeMenu": "/system/log",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						},
+						{
+							"path": "/system/log/list/button-look",
+							"name": "system-log-list-button-look",
+							"component": "",
+							"meta": {
+								"type": 3,
+								"icon": "",
+								"title": "日志管理-列表-查看",
+								"activeMenu": "/system/log",
+								"isHide": true,
+								"isFull": false,
+								"isAffix": false,
+								"isKeepAlive": true
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"msg": "成功"
+}

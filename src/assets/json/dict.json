@@ -1,0 +1,66 @@
+[
+	{
+		"code": "base_sf",
+		"name": "是否",
+		"remarks": "基础-是否",
+		"list": [
+			{
+				"label": "是",
+				"value": "1"
+			},
+			{
+				"label": "否",
+				"value": "2"
+			}
+		]
+	},
+	{
+		"code": "base_status",
+		"name": "状态",
+		"remarks": "基础-状态",
+		"list": [
+			{
+				"label": "成功",
+				"value": "1"
+			},
+			{
+				"label": "失败",
+				"value": "2"
+			},
+			{
+				"label": "未知",
+				"value": "3"
+			}
+		]
+	},
+	{
+		"code": "base_show",
+		"name": "展示状态",
+		"remarks": "基础-展示状态",
+		"list": [
+			{
+				"label": "展示",
+				"value": "1"
+			},
+			{
+				"label": "不展示",
+				"value": "2"
+			}
+		]
+	},
+	{
+		"code": "system_account_role",
+		"name": "角色",
+		"remarks": "系统管理-账号管理",
+		"list": [
+			{
+				"label": "admin",
+				"value": "admin"
+			},
+			{
+				"label": "user",
+				"value": "use"
+			}
+		]
+	}
+]

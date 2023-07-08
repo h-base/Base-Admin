@@ -1,0 +1,42 @@
+.title-box {
+	margin-top: 0;
+	width: 100%;
+	align-self: flex-start;
+	border-bottom: 1px dashed var(--el-border-color-light);
+	padding: 0 0 15px 0;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--el-color-info-dark-2);
+	letter-spacing: 0.5px;
+}
+
+.el-form {
+	width: 80%;
+	margin: 20px auto 0;
+
+	.border_bottom {
+		border-bottom: 1px dashed var(--el-border-color-light);
+	}
+
+	.pro-form-item-label {
+		display: flex;
+		align-items: center;
+		&__tips {
+			margin-left: 5px;
+		}
+	}
+	.form-action {
+		width: 100%;
+		&.right {
+			border-top: none;
+			text-align: right;
+		}
+		.el-button {
+			font-size: 16px;
+		}
+	}
+
+	.form-footer {
+		border-top: 1px dashed var(--el-border-color-light);
+	}
+}
