@@ -17,7 +17,7 @@ interface DictListProps {
 	list: DictProps[];
 }
 
-const DICT_SESSION_KEY = "DICT_SESSION_DATA";
+const DICT_SESSION_KEY = "BASE_ADMIN_DICT_SESSION_DATA";
 /**
  * 字典处理
  */

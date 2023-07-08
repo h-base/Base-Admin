@@ -9,7 +9,7 @@ import { useTabsStore } from "@/stores/modules/tabs";
 import { useKeepAliveStore } from "@/stores/modules/keepAlive";
 import { initDynamicRouter } from "@/routers/modules/dynamicRouter";
 
-import type { ElForm } from "element-plus";
+import { ElForm } from "element-plus";
 type FormInstance = InstanceType<typeof ElForm>;
 
 export const useLogin = () => {

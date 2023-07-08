@@ -147,6 +147,13 @@
 	}
 }
 
+.m-l-auto {
+	margin-left: auto;
+}
+.m-r-auto {
+	margin-right: auto;
+}
+
 // font-size
 @for $size from 12 through 40 {
 	@if $size % 2 == 0 {
