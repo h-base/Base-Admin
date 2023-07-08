@@ -10,7 +10,14 @@
 		"url": "https://github.com/h-base"
 	},
 	"license": "MIT",
-	"homepage": "https://github.com/h-base/Bae-Admin",
+	"homepage": "https://github.com/h-base/Base-Admin",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:h-base/Base-Admin.gitv"
+	},
+	"bugs": {
+		"url": "https://github.com/h-base/Base-Admin/issues"
+	},
 	"scripts": {
 		"dev": "vue-tsc && vite",
 		"build:test": "vue-tsc && vite build --mode test",

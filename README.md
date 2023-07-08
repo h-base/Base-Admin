@@ -4,7 +4,7 @@
 
 在[Geeker-Admin](https://github.com/HalseySpicy/Geeker-Admin.git)上二次开发的项目，大家可以先去看大佬写的，多多支持原作者，开源不易。
 
-因为 `Geeker-Admin` 只是搭了基础框架和封装组件，所以我在这基础上加上了一些实际的开发场景。变成了真正的开箱即用，基本上只需要修改接口和对应的业务代码就可以使用。
+因为 `Geeker-Admin` 只是搭了基础框架和封装组件，所以在这基础上加上了一些实际的开发场景。变成了真正的开箱即用，基本上只需要修改接口和对应的业务代码就可以使用。
 
 Base-Admin 一款基于 Vue3.3、TypeScript、Vite4、Pinia、Element-Plus 开源的后台管理框架，使用目前最新技术栈开发。项目提供强大的 [ProTable](https://juejin.cn/post/7166068828202336263)，在一定程度上节省您的开发效率。
 
@@ -14,8 +14,8 @@ Base-Admin 一款基于 Vue3.3、TypeScript、Vite4、Pinia、Element-Plus 开�
 
 ### 代码仓库 ⭐
 
-- Gitee：
-- GitHub：
+- Gitee：https://gitee.com/hickey_symbol_admin/base-admin
+- GitHub：https://github.com/h-base/Base-Admin
 
 ### 项目文档 📚
 
@@ -41,9 +41,9 @@ Base-Admin 一款基于 Vue3.3、TypeScript、Vite4、Pinia、Element-Plus 开�
 
 ```text
 # Gitee
-git clone
+git clone git@gitee.com:hickey_symbol_admin/base-admin.git
 # GitHub
-git clone
+git clone git@github.com:h-base/Base-Admin.git
 ```
 
 - **Install：**
@@ -89,7 +89,7 @@ yarn run lint:stylelint
 - **commit：**
 
 ```text
-# 提交代码（提交前会自动执行 lint:lint-staged 命令）
+# 提交代码
 yarn run commit
 ```
 
@@ -97,7 +97,6 @@ yarn run commit
 
 ```text
 Geeker-Admin
-├─ .husky                 # husky 配置文件
 ├─ .vscode                # VSCode 推荐配置
 ├─ build                  # Vite 配置项
 ├─ public                 # 静态资源文件（该文件夹不会被打包）
@@ -132,7 +131,6 @@ Geeker-Admin
 ├─ commitlint.config.cjs  # git 提交规范配置
 ├─ index.html             # 入口 html
 ├─ LICENSE                # 开源协议文件
-├─ lint-staged.config.cjs # lint-staged 配置文件
 ├─ package-lock.json      # 依赖包包版本锁
 ├─ package.json           # 依赖包管理
 ├─ postcss.config.cjs     # postcss 配置
