@@ -23,11 +23,12 @@ Base-Admin 一款基于 Vue3.3、TypeScript、Vite4、Pinia、Element-Plus 开�
 
 ### 项目功能 🔨
 
-- 使用 Vue3.3 + TypeScript 开发，单文件组件**＜ script setup ＞**
+- 使用 Vue3.x + TypeScript 开发，单文件组件**＜ script setup ＞**
 - 采用 Vite4 作为项目开发、打包工具（配置 Gzip 打包、TSX 语法、跨域代理…）
 - 使用 Pinia 替代 Vuex，轻量、简单、易用，集成 Pinia 持久化插件
 - 使用 TypeScript 对 Axios 整个二次封装（请求拦截、取消、常用请求封装…）
-- 基于 Element 二次封装 [ProTable](https://juejin.cn/post/7166068828202336263) 组件，表格页面全部为配置项 columns
+- 基于 Element 二次封装 [ProTable](https://juejin.cn/post/7166068828202336263) 组件，表格页面全部为配置项
+- 基于 Element 二次封装 [ProForm](https://docs.h-base.online) 组件，`fromItem`全部为配置项
 - 支持 Element 组件大小切换、暗黑模式
 - 使用 VueRouter 进行路由权限拦截、页面按钮权限配置、路由懒加载
 - 使用 KeepAlive 对页面进行缓存，支持多级嵌套页面缓存

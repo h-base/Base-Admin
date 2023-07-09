@@ -1,7 +1,7 @@
 /**
  * v-debounce
  * 按钮防抖指令，可自行扩展至input
- * 接收参数：function类型
+ * @example v-debounce="函数"
  */
 import type { Directive, DirectiveBinding } from "vue";
 interface ElType extends HTMLElement {

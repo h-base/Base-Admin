@@ -30,6 +30,20 @@
 			}
 		},
 		{
+			"path": "/directives",
+			"name": "directives",
+			"component": "/directives/index",
+			"meta": {
+				"type": 2,
+				"icon": "Stamp",
+				"title": "指令",
+				"isHide": false,
+				"isFull": false,
+				"isAffix": false,
+				"isKeepAlive": false
+			}
+		},
+		{
 			"path": "/form",
 			"name": "form",
 			"redirect": "/form/base",
@@ -79,6 +93,50 @@
 						"type": 2,
 						"icon": "",
 						"title": "表单联动",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					}
+				}
+			]
+		},
+		{
+			"path": "/table",
+			"name": "table",
+			"redirect": "/table/base",
+			"meta": {
+				"type": 1,
+				"icon": "Grid",
+				"title": "表格",
+				"isHide": false,
+				"isFull": false,
+				"isAffix": false,
+				"isKeepAlive": true
+			},
+			"children": [
+				{
+					"path": "/table/base",
+					"name": "table-base",
+					"component": "/table/base/index",
+					"meta": {
+						"type": 2,
+						"icon": "",
+						"title": "基础表格",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true
+					}
+				},
+				{
+					"path": "/table/manual",
+					"name": "table-manual",
+					"component": "/table/manual/index",
+					"meta": {
+						"type": 2,
+						"icon": "",
+						"title": "手动获取数据",
 						"isHide": false,
 						"isFull": false,
 						"isAffix": false,

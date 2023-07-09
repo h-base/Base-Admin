@@ -1,20 +1,47 @@
 <template>
 	<div class="home">
-		<div class="card flex-align-center">
-			<el-avatar :size="60" :src="userInfo.avatar" alt="avatar" />
-			<div class="ml10">
-				{{ userInfo.name }}
-			</div>
-			<div class="flex-align-center m-l-auto">
-				<el-link target="_blank" type="primary" href="https://gitee.com/hickey_symbol_admin/base-admin">
-					💥 使用文档
-				</el-link>
-				<el-divider direction="vertical" />
-				<el-link target="_blank" type="danger" href="https://gitee.com/hickey_symbol_admin/base-admin">Gitee</el-link>
-				<el-divider direction="vertical" />
-				<el-link target="_blank" type="info" href="https://github.com/h-base/Base-Admin">GitHub </el-link>
-			</div>
-		</div>
+		<el-row :gutter="20">
+			<el-col :span="12">
+				<div class="card h-100-p">
+					<el-descriptions title="项目介绍" :column="1" border>
+						<el-descriptions-item label="name" align="center">
+							<h3>Base Admin</h3>
+						</el-descriptions-item>
+						<el-descriptions-item label="Document" align="center">
+							<el-link target="_blank" type="primary" href="https://docs.h-base.online"> 💥 使用文档 </el-link>
+						</el-descriptions-item>
+						<el-descriptions-item label="Gitee" align="center">
+							<el-link target="_blank" type="danger" href="https://gitee.com/hickey_symbol_admin/base-admin"
+								>Gitee</el-link
+							>
+						</el-descriptions-item>
+						<el-descriptions-item label="Github" align="center">
+							<el-link target="_blank" type="info" href="https://github.com/h-base/Base-Admin">GitHub </el-link>
+						</el-descriptions-item>
+					</el-descriptions>
+				</div>
+			</el-col>
+
+			<el-col :span="12">
+				<div class="card">
+					<el-descriptions title="有关作者" :column="1" border>
+						<el-descriptions-item label="Avatar" align="center" width="100px">
+							<el-avatar :size="60" :src="userInfo.avatar" alt="avatar" />
+						</el-descriptions-item>
+						<el-descriptions-item label="Name" align="center">Hickey</el-descriptions-item>
+						<el-descriptions-item label="Email" align="center">
+							<el-text type="primary"> h_base@163.com </el-text>
+						</el-descriptions-item>
+						<el-descriptions-item label="Gitee" align="center">
+							<el-link target="_blank" type="danger" href="https://gitee.com/hickey_symbol_admin"> Gitee </el-link>
+						</el-descriptions-item>
+						<el-descriptions-item label="Github" align="center">
+							<el-link target="_blank" type="info" href="https://github.com/h-base">GitHub </el-link>
+						</el-descriptions-item>
+					</el-descriptions>
+				</div>
+			</el-col>
+		</el-row>
 
 		<!-- 数据卡片 -->
 		<el-row :gutter="40" class="mt20">
@@ -67,7 +94,7 @@
 					<template #header>
 						<h4>折线图</h4>
 					</template>
-					<LineChart id="LineChart" class="w100p" style="height: 500px" />
+					<LineChart id="LineChart" class="w-100-p" style="height: 500px" />
 				</el-card>
 			</el-col>
 			<el-col :xs="24" :sm="12" :lg="8" class="mb20">
@@ -75,7 +102,7 @@
 					<template #header>
 						<h4>雷达图</h4>
 					</template>
-					<RadarChart id="radarChart" class="w100p" style="height: 500px" />
+					<RadarChart id="radarChart" class="w-100-p" style="height: 500px" />
 				</el-card>
 			</el-col>
 
@@ -84,7 +111,7 @@
 					<template #header>
 						<h4>饼状图</h4>
 					</template>
-					<PieChart id="PieChart" class="w100p" style="height: 500px" />
+					<PieChart id="PieChart" class="w-100-p" style="height: 500px" />
 				</el-card>
 			</el-col>
 		</el-row>

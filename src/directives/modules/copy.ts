@@ -1,7 +1,7 @@
 /**
  * v-copy
  * 复制某个值至剪贴板
- * 接收参数：string类型/Ref<string>类型/Reactive<string>类型
+ * @example v-copy="复制的内容"
  */
 import { ElMessage } from "element-plus";
 import type { Directive, DirectiveBinding } from "vue";

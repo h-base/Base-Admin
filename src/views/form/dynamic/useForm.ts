@@ -171,7 +171,7 @@ export const useForm = () => {
 	};
 
 	const handelSubmit = (data: any) => {
-		ruleForm.value = data;
+		console.log("handelSubmit", data);
 	};
 
 	return {

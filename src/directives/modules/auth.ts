@@ -1,6 +1,7 @@
 /**
  * v-auth
  * 按钮权限指令
+ * @example <div v-auth="button-look">权限</div>
  */
 import { useAuthStore } from "@/stores/modules/auth";
 import type { Directive, DirectiveBinding } from "vue";

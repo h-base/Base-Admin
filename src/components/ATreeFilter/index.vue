@@ -1,10 +1,22 @@
 <template>
 	<div class="card filter">
-		<el-input v-model="filterText" placeholder="输入关键字进行过滤" clearable />
+		<el-row :gutter="20">
+			<el-col :span="4" :xs="12" :sm="12" :md="10" :lg="8" :xl="4">
+				<el-button :type="expandAll ? 'primary' : ''" @click="changeExpandAll()">
+					{{ expandAll ? "收起" : "展开" }}
+				</el-button>
+				<el-button :type="checkAll ? 'primary' : ''" class="ml10" :disabled="!multiple" @click="handleCheckAll()">
+					{{ checkAll ? "取消全选" : "全选" }}
+				</el-button>
+			</el-col>
+			<el-col :span="20" :xs="12" :sm="12" :md="14" :lg="16" :xl="20">
+				<el-input v-model="filterText" placeholder="输入关键字进行过滤" clearable />
+			</el-col>
+		</el-row>
 		<el-scrollbar>
 			<el-tree
 				ref="treeRef"
-				default-expand-all
+				:default-expand-all="expandAll"
 				:node-key="id"
 				:data="multiple ? treeData : treeAllData"
 				:show-checkbox="multiple"
@@ -54,6 +66,8 @@ export interface ATreeFilterProps {
 	disabled?: boolean; // 是否为禁用 ==> 非必传，默认为 false
 	/** 是否为权限管理 */
 	isAuth?: boolean;
+	// 默认展开
+	defaultExpandAll?: boolean;
 	modelValue?: string | number | string[] | number[];
 }
 const props = withDefaults(defineProps<ATreeFilterProps>(), {
@@ -65,6 +79,7 @@ const props = withDefaults(defineProps<ATreeFilterProps>(), {
 	label: "label",
 	multiple: false,
 	isAuth: false,
+	defaultExpandAll: true,
 	disabled: false
 });
 
@@ -95,6 +110,31 @@ const setSelected = () => {
 	} else {
 		selected.value = typeof props.modelValue === "string" ? props.modelValue : "";
 	}
+};
+
+// 展开收起
+const expandAll = ref(props.defaultExpandAll);
+const changeExpandAll = () => {
+	expandAll.value = !expandAll.value;
+	let nodesMap = treeRef?.value?.store.nodesMap;
+	for (let key in nodesMap) {
+		// 全部关闭
+		nodesMap[key].expanded = expandAll.value;
+	}
+	console.log();
+};
+
+// 全选
+const checkAll = ref(false);
+const handleCheckAll = () => {
+	checkAll.value = !checkAll.value;
+	let nodesMap = treeRef?.value?.store.nodesMap;
+	for (let key in nodesMap) {
+		// 全部关闭
+		nodesMap[key].checked = checkAll.value;
+	}
+	const checkedKeys = treeRef.value?.getCheckedKeys() as string[];
+	emit("update:modelValue", checkedKeys);
 };
 
 const checkOnClickNode = computed(() => {

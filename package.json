@@ -50,8 +50,7 @@
 		"qs": "^6.11.2",
 		"sortablejs": "^1.15.0",
 		"vue": "^3.3.4",
-		"vue-router": "^4.2.1",
-		"vuedraggable": "^4.1.0"
+		"vue-router": "^4.2.1"
 	},
 	"devDependencies": {
 		"@types/nprogress": "^0.2.0",

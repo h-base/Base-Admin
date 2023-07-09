@@ -5,6 +5,7 @@ import type { ProFormProps } from "@/components/ProForm/index.vue";
 
 export const useForm = () => {
 	const ruleForm = ref({});
+	const submitParams = ref({});
 
 	const proFromData: ProFormProps = {
 		title: "基础表单（实际应用在 system/account/create）",
@@ -19,6 +20,20 @@ export const useForm = () => {
 					defaultValue: "",
 					label: "输入框",
 					rules: [{ required: true, message: "必填", trigger: ["blur", "change"] }]
+				},
+				attrs: {
+					typeName: "ElInput",
+					ElInput: {
+						placeholder: "请输入",
+						clearable: true
+					}
+				}
+			},
+			{
+				formItem: {
+					prop: "meta.input",
+					defaultValue: "",
+					label: "属性嵌套"
 				},
 				attrs: {
 					typeName: "ElInput",
@@ -279,12 +294,13 @@ export const useForm = () => {
 	};
 
 	const handelSubmit = (data: any) => {
-		ruleForm.value = data;
+		submitParams.value = data;
 	};
 
 	return {
 		proFromData,
 		ruleForm,
+		submitParams,
 		handelSubmit
 	};
 };
