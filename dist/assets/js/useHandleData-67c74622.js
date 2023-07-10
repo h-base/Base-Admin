@@ -1,0 +1,1 @@
+import{au as o,a2 as u}from"./index-9844670a.js";const l=(t,a={},e,s="warning")=>new Promise((r,n)=>{o.confirm(`${e}`,"温馨提示",{confirmButtonText:"确定",cancelButtonText:"取消",type:s,draggable:!0}).then(async()=>{if(!await t(a))return n(!1);u({type:"success",message:`${e}成功!`}),r(!0)})});export{l as u};

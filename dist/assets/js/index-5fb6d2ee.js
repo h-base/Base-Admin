@@ -1,0 +1,1 @@
+import{Z as n}from"./index-9844670a.js";const e=t=>n.get("/admin/account/list",t),a=t=>n.get(`/admin/account/detail/${t}`),o=t=>n.post("/admin/account/save",t),u=t=>n.put("/admin/account/update",t),d=t=>n.delete("/admin/account/delete",t);export{e as a,d,a as g,o as s,u};

@@ -1,0 +1,1 @@
+import{Z as t}from"./index-9844670a.js";const o=e=>t.get("/admin/role/list",e),a=e=>t.get(`/admin/role/detail/${e}`),r=e=>t.post("/admin/role/save",e),d=e=>t.put("/admin/role/update",e),s=e=>t.delete("/admin/role/delete",e);export{a,s as d,o as g,r as s,d as u};
