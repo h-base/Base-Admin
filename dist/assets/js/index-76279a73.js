@@ -1,1 +1,0 @@
-import{Z as e}from"./index-9844670a.js";const d=t=>e.get("/admin/dict/list",t),n=t=>e.get(`/admin/dict/detail/${t}`),a=t=>e.post("/admin/dict/save",t),s=t=>e.put("/admin/dict/update",t),c=t=>e.delete("/admin/dict/delete",t);export{d as a,c as d,n as g,a as s,s as u};
