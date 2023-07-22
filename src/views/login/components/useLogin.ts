@@ -26,8 +26,8 @@ export const useLogin = () => {
 
 	const loading = ref(false);
 	const loginForm = reactive<Auth.LoginParams>({
-		userName: "",
-		password: ""
+		userName: "admin",
+		password: "123456"
 	});
 
 	// login

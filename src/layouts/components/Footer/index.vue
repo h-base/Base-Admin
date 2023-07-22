@@ -1,6 +1,6 @@
 <template>
 	<div class="footer flex-center">
-		<a href="https://github.com/HalseySpicy" target="_blank"> © 2023 Base admin All Rights Reserved. </a>
+		<a href="http://beian.miit.gov.cn/" target="_blank"> 粤ICP备2023082296号-1 </a>
 	</div>
 </template>
 

@@ -51,8 +51,6 @@ git clone git@github.com:h-base/Base-Admin.git
 
 ```text
 yarn install
-or
-npm install
 ```
 
 - **Run：**
